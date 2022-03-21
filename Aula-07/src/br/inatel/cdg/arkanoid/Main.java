@@ -1,4 +1,4 @@
-package br.inatel.cdg.exercicio3;
+package br.inatel.cdg.arkanoid;
 
 public class Main{
 
