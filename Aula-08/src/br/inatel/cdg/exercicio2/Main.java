@@ -16,32 +16,48 @@ public class Main{
 
         int posicaoMinaX = rand.nextInt(2);
         int posicaoMinay = rand.nextInt(2);
+        System.out.println(posicaoMinaX + " - " +posicaoMinay);
 
         campoMinado[posicaoMinaX][posicaoMinay] = true;
 
         int posicaoXJogador, posicaoYJogador;
 
         System.out.println("Bem vindo ao Campo Minado!");
-        int contador = 0;
-        do {
+
+        //Solucao utilizando do - while
+//        int contador = 0;
+//        do {
+//            System.out.print("Digite uma posicao X: ");
+//            posicaoXJogador = entrada.nextInt();
+//
+//            System.out.print("Digite uma posicao Y: ");
+//            posicaoYJogador = entrada.nextInt();
+//
+//            if(campoMinado[posicaoXJogador][posicaoYJogador]){
+//                System.out.println("Opa acertou a mina");
+//                contador = 0;
+//            }else{
+//                System.out.println("Boa! Sem mina");
+//                contador++;
+//            }
+//
+//
+//        } while (contador < 3);
+
+        //solucao utilizando for
+        for (int i = 0; i < campoMinado.length*2; i++){
             System.out.print("Digite uma posicao X: ");
             posicaoXJogador = entrada.nextInt();
-
             System.out.print("Digite uma posicao Y: ");
             posicaoYJogador = entrada.nextInt();
-
             if(campoMinado[posicaoXJogador][posicaoYJogador]){
-                System.out.println("Opa acertou a mina");
-                contador = 0;
+                System.out.println("EXPLODIU!");
             }else{
-                System.out.println("Boa! Sem mina");
-                contador++;
+                System.out.println("SAFE!");
             }
+        }
 
-
-        } while (contador < 3);
-
-        System.out.println("Parabens!");
+        System.out.println("Jogo Encerrado");
         entrada.close();
 
     }
