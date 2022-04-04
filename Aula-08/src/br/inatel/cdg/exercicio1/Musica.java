@@ -3,7 +3,7 @@ package br.inatel.cdg.exercicio1;
 public class Musica{
 
     private String nome;
-    private float duracao;
+    private double duracao;
     
     public Musica(String nome, float duracao) {
 		this.nome = nome;
@@ -16,7 +16,7 @@ public class Musica{
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public float getDuracao() {
+	public double getDuracao() {
 		return duracao;
 	}
 	public void setDuracao(float duracao) {

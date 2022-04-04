@@ -5,21 +5,21 @@ public class Main{
 
     public static void main(String args[]){
 
-        Empresario empresario = new Empresario("Jaum Empresario",1000021023);
+        Empresario empresario = new Empresario("Seu Madruga",1000021023);
 
-        Musica musica1 = new Musica("Paranoid", 3.4f);
+        Musica musica1 = new Musica("Musica1", 3.4f);
 
-        Musica musica2 = new Musica("N.I.B", 4.2f);
+        Musica musica2 = new Musica("Musica2", 4.2f);
 
-        Musica musica3 = new Musica("War Pigs", 6.2f);
+        Musica musica3 = new Musica("Musica3", 6.2f);
 
-        Membro membro1 = new Membro("Ozzy", "Vocalista");
+        Membro membro1 = new Membro("Membro1", "Vocalista");
 
-        Membro membro2 = new Membro("Tony Iommi","Guitarrista");
+        Membro membro2 = new Membro("Membro2","Guitarrista");
 
-        Membro membro3 = new Membro("Geezer","Baixista");
+        Membro membro3 = new Membro("Membro3","Baixista");
 
-        Banda banda = new Banda("Black Sabbath","Heavy Metal");
+        Banda banda = new Banda("Bandinha do touro louco","Musica boa");
         banda.setEmpresario(empresario);
         //Adicionando Musicas
         banda.addMusica(musica1);

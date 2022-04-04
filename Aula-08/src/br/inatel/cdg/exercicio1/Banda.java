@@ -16,7 +16,7 @@ public class Banda{
     }
 
     void addMusica(Musica novaMusica){
-        for(int i = 0; i < musicas.length; i++){//Varrendo o vetor de musicas
+        for(int i = 0; i < musicas.length; i++){//Varrendo o array de musicas
             if(musicas[i] == null){//Verifica se não existe musica
                 musicas[i] = novaMusica;
                 break; //Adiciona e sai do metodo

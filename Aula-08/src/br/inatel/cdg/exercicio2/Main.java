@@ -15,14 +15,27 @@ public class Main{
 
 
         int posicaoMinaX = rand.nextInt(2);
-        int posicaoMinay = rand.nextInt(2);
-        System.out.println(posicaoMinaX + " - " +posicaoMinay);
+        int posicaoMinaY = rand.nextInt(2);
+        System.out.println("Bomba: "+posicaoMinaX + " - " +posicaoMinaY);
 
-        campoMinado[posicaoMinaX][posicaoMinay] = true;
+        campoMinado[posicaoMinaX][posicaoMinaY] = true;
 
         int posicaoXJogador, posicaoYJogador;
 
         System.out.println("Bem vindo ao Campo Minado!");
+
+        //solucao utilizando for
+        for (int i = 0; i < campoMinado.length*2; i++){
+            System.out.print("Digite uma posicao X: ");
+            posicaoXJogador = entrada.nextInt();
+            System.out.print("Digite uma posicao Y: ");
+            posicaoYJogador = entrada.nextInt();
+            if(campoMinado[posicaoXJogador][posicaoYJogador]){
+                System.out.println("EXPLODIU!");
+            }else{
+                System.out.println("SAFE!");
+            }
+        }
 
         //Solucao utilizando do - while
 //        int contador = 0;
@@ -44,18 +57,6 @@ public class Main{
 //
 //        } while (contador < 3);
 
-        //solucao utilizando for
-        for (int i = 0; i < campoMinado.length*2; i++){
-            System.out.print("Digite uma posicao X: ");
-            posicaoXJogador = entrada.nextInt();
-            System.out.print("Digite uma posicao Y: ");
-            posicaoYJogador = entrada.nextInt();
-            if(campoMinado[posicaoXJogador][posicaoYJogador]){
-                System.out.println("EXPLODIU!");
-            }else{
-                System.out.println("SAFE!");
-            }
-        }
 
         System.out.println("Jogo Encerrado");
         entrada.close();
