@@ -5,14 +5,12 @@ public class Banda{
     private String nome;
     private String genero;
     private Empresario empresario;
-    private Musica[] musicas;
-    private Membro[] membros;
+    private Musica[] musicas = new Musica[5];
+    private Membro[] membros = new Membro[5];
     
     public Banda(String nome, String genero){
     	this.nome = nome;
         this.genero = genero;
-    	musicas = new Musica[5]; //Definindo o tamanho dentro do construtor
-        membros = new Membro[5];
     }
 
     void addMusica(Musica novaMusica){
