@@ -1,26 +1,33 @@
 package br.inatel.cdg.exercicio1;
 
-import br.inatel.cdg.exercicio1.inimigos.CavaleiroNegro;
-import br.inatel.cdg.exercicio1.inimigos.CavaleiroPrata;
-import br.inatel.cdg.exercicio1.inimigos.ZumbiLerdo;
+import br.inatel.cdg.exercicio1.brownies.BrownieNutella;
+import br.inatel.cdg.exercicio1.brownies.BrownieDoceDeLeite;
+import br.inatel.cdg.exercicio1.brownies.BrownieCafe;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		ZumbiLerdo zumbi = new ZumbiLerdo("Zumbi Lerdo", 50, "Espada Curta");
-		CavaleiroNegro cavNegro = 
-				new CavaleiroNegro("Cavaleiro Negro", 150, "Espada Longa");
-		CavaleiroPrata cavPrata = 
-				new CavaleiroPrata("Cavaleiro Prata", 175, "Silver Sword");
-		
-		zumbi.atacando();
-		
-		cavNegro.ataqueRapido();
-		cavPrata.ataqueForte();
-		
-		System.out.println(cavPrata.getVida());
-		System.out.println(zumbi.getVida());
+		BrownieCafe bwCafe = new BrownieCafe("Brownie de Café", 10, "Café");
+		BrownieNutella bwNutella =
+				new BrownieNutella("Brownie de Nutella", 70, "Nutella");
+		BrownieDoceDeLeite bwDoceLeite =
+				new BrownieDoceDeLeite("Brownie Doce de Leite", 15, "Doce de leite");
+
+
+		bwNutella.adicionaNutella();
+		bwCafe.adicionaCafe();
+		bwDoceLeite.adicionaDoceDeLeite();
+		System.out.println(" ");
+		bwCafe.mostraInfo();
+		bwDoceLeite.mostraInfo();
+		bwNutella.mostraInfo();
+		System.out.println(" ");
+		bwNutella.addCarrinhoDeCompras();
+		bwNutella.calculaValorTotalCompra();
+		bwCafe.calculaValorTotalCompra();
+		bwDoceLeite.calculaValorTotalCompra();
+
 	}
 
 }
