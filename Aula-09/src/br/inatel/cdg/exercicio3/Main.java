@@ -1,34 +1,27 @@
 package br.inatel.cdg.exercicio3;
 
-import br.inatel.cdg.exercicio3.inimigos.CavaleiroNegro;
-import br.inatel.cdg.exercicio3.inimigos.CavaleiroPrata;
-import br.inatel.cdg.exercicio3.inimigos.ZumbiLerdo;
-import br.inatel.cdg.exercicio3.jogador.Jogador;
+
+import br.inatel.cdg.exercicio3.brownies.BrownieCafe;
+import br.inatel.cdg.exercicio3.brownies.BrownieNutella;
+import br.inatel.cdg.exercicio3.brownies.BrownieDoceDeLeite;
+import br.inatel.cdg.exercicio3.comprador.Comprador;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		ZumbiLerdo zumbi = new ZumbiLerdo("Zumbi Lerdo", 50, "Espada Curta");
-		CavaleiroNegro cavNegro = 
-				new CavaleiroNegro("Cavaleiro Negro", 150, "Espada Longa");
-		CavaleiroPrata cavPrata = 
-				new CavaleiroPrata("Cavaleiro Prata", 175, "Silver Sword");
-		
-		Jogador jogador = new Jogador("Chuck Norris", 100000000);
-		
-		System.out.println("Verificando a vida dos inimigos ANTES do ataque.");
-		System.out.println("Vida do " + zumbi.getNome() + " : " + zumbi.getVida());
-		System.out.println("Vida do " + cavNegro.getNome() + " : " + cavNegro.getVida());
-		System.out.println("Vida do " + cavPrata.getNome() + " : " + cavPrata.getVida());
+		BrownieCafe bwCafe = new BrownieCafe("Brownie de Café", 10, "Café");
+		BrownieNutella bwNutella =
+				new BrownieNutella("Brownie de Nutella", 70, "Nutella");
+		BrownieDoceDeLeite bwDoceLeite =
+				new BrownieDoceDeLeite("Brownie Doce de Leite", 15, "Doce de leite");
 
-		jogador.atacar(zumbi);
-		jogador.atacar(cavNegro);
-		jogador.atacar(cavPrata);
+		Comprador comprador = new Comprador("Comprador", 1000.95);
 
-		System.out.println("Verificando a vida dos inimigos APOS o ataque.");
-		System.out.println("Vida do " + zumbi.getNome() + " : " + zumbi.getVida());
-		System.out.println("Vida do " + cavNegro.getNome() + " : " + cavNegro.getVida());
-		System.out.println("Vida do " + cavPrata.getNome() + " : " + cavPrata.getVida());
+		comprador.efetuarCompra(bwCafe);
+		comprador.efetuarCompra(bwNutella);
+		comprador.efetuarCompra(bwDoceLeite);
+
 	}
+
 }

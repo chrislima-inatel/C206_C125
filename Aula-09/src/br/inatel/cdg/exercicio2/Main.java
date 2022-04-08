@@ -1,22 +1,24 @@
 package br.inatel.cdg.exercicio2;
 
-import br.inatel.cdg.exercicio2.inimigos.CavaleiroNegro;
-import br.inatel.cdg.exercicio2.inimigos.CavaleiroPrata;
-import br.inatel.cdg.exercicio2.inimigos.ZumbiLerdo;
+import br.inatel.cdg.exercicio2.brownies.BrownieCafe;
+import br.inatel.cdg.exercicio2.brownies.BrownieDoceDeLeite;
+import br.inatel.cdg.exercicio2.brownies.BrownieNutella;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		ZumbiLerdo zumbi = new ZumbiLerdo("Zumbi Lerdo", 50, "Espada Curta");
-		CavaleiroNegro cavNegro = 
-				new CavaleiroNegro("Cavaleiro Negro", 150, "Espada Longa");
-		CavaleiroPrata cavPrata = 
-				new CavaleiroPrata("Cavaleiro Prata", 175, "Silver Sword");
-		
-		zumbi.atacando();
-		cavNegro.atacando();
-		cavPrata.atacando();		
+		BrownieCafe bwCafe = new BrownieCafe("Brownie de Café", 10, "Café");
+		BrownieNutella bwNutella =
+				new BrownieNutella("Brownie de Nutella", 70, "Nutella");
+		BrownieDoceDeLeite bwDoceLeite =
+				new BrownieDoceDeLeite("Brownie Doce de Leite", 15, "Doce de leite");
+
+
+		bwCafe.addCarrinhoDeCompras();
+		bwNutella.addCarrinhoDeCompras();
+		bwDoceLeite.addCarrinhoDeCompras();
+
 	}
 
 }
