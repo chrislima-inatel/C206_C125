@@ -10,7 +10,7 @@ public abstract class Mamifero {
         this.vida = vida;
     }
 
-    public abstract void emitirSon();
+    public abstract void emitirSom();
 
     public void mostraInfo(){
         System.out.println("Dados da classe Mamifero");

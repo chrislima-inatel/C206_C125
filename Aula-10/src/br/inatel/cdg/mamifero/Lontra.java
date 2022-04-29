@@ -8,9 +8,9 @@ public class Lontra extends Mamifero {
     }
 
     @Override
-    public void emitirSon() {
+    public void emitirSom() {
 
-        System.out.println("Lontra emitindo son!");
+        System.out.println("Lontra emitindo som!");
     }
 
 }

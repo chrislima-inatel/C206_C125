@@ -8,7 +8,7 @@ public class Cachorro extends Mamifero {
     }
 
     @Override
-    public void emitirSon() {
+    public void emitirSom() {
         System.out.println("Cachorro Latindo!");
 
     }

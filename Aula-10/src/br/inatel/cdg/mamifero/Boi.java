@@ -7,8 +7,8 @@ public class Boi extends Mamifero {
     }
 
     @Override
-    public void emitirSon() {
-        System.out.println("Boi emitindo son!");
+    public void emitirSom() {
+        System.out.println("Boi emitindo som!");
     }
 
 }

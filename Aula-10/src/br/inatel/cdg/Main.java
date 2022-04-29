@@ -13,9 +13,9 @@ public class Main{
         Mamifero boi = new Boi("Clovis", 200);
         Mamifero lontra = new Lontra("Eusébio", 78);
 
-        cachorro.emitirSon();
-        boi.emitirSon();
-        lontra.emitirSon();
+        cachorro.emitirSom();
+        boi.emitirSom();
+        lontra.emitirSom();
 
         cachorro.mostraInfo();
         boi.mostraInfo();
