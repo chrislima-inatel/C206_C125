@@ -1,25 +1,25 @@
 package br.inatel.cdg;
 
-import br.inatel.cdg.jogador.Arqueiro;
-import br.inatel.cdg.jogador.Guerreiro;
-import br.inatel.cdg.jogador.Jogador;
-import br.inatel.cdg.jogador.Mago;
+import br.inatel.cdg.mamifero.Boi;
+import br.inatel.cdg.mamifero.Lontra;
+import br.inatel.cdg.mamifero.Mamifero;
+import br.inatel.cdg.mamifero.Cachorro;
 
 public class Main{
 
     public static void main(String args[]){
         
-        Jogador mago = new Mago("Mago Implacavel", 75, "Cajado");
-        Jogador arqueiro = new Arqueiro("Cacador", 78, "Arco");
-        Jogador guerreiro = new Guerreiro("Guerreiro", 78, "Machado");
+        Mamifero cachorro = new Cachorro("Judite", 100);
+        Mamifero boi = new Boi("Clovis", 200);
+        Mamifero lontra = new Lontra("Eusébio", 78);
 
-        mago.atacar();
-        arqueiro.atacar();
-        guerreiro.atacar();
+        cachorro.emitirSon();
+        boi.emitirSon();
+        lontra.emitirSon();
 
-        mago.mostraInfo();
-        arqueiro.mostraInfo();
-        guerreiro.mostraInfo();
+        cachorro.mostraInfo();
+        boi.mostraInfo();
+        lontra.mostraInfo();
 
     }
 
