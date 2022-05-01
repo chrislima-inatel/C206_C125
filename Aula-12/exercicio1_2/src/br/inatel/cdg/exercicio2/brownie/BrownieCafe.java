@@ -1,4 +1,4 @@
-package br.inatel.cdg.exercicio3.brownies;
+package br.inatel.cdg.exercicio2.brownie;
 
 public class BrownieCafe extends Brownie {
 	
