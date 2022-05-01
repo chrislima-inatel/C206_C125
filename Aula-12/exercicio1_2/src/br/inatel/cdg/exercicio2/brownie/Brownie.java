@@ -1,6 +1,6 @@
 package br.inatel.cdg.exercicio2.brownie;
 
-public abstract class Brownie implements Comparable <Brownie> {
+public class Brownie implements Comparable <Brownie> {
 
 	protected String nome;
 	protected double preco;
