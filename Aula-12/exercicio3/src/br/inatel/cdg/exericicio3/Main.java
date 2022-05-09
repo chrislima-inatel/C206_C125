@@ -25,7 +25,7 @@ public class Main {
 		}
 		tempoFinal = System.currentTimeMillis();
 		System.out.println("Tempo para inserir na List: " 
-					+ (tempoFinal-tempoInicial));
+					+ (tempoFinal-tempoInicial)+"ms");
 		
 		//Inserindo no Set (HashSet)
 		tempoInicial = System.currentTimeMillis();
@@ -34,16 +34,16 @@ public class Main {
 		}
 		tempoFinal = System.currentTimeMillis();
 		System.out.println("Tempo para inserir no Set: " 
-					+ (tempoFinal-tempoInicial));
+					+ (tempoFinal-tempoInicial)+"ms");
 		
-		//Inserindo no Set (HashSet)
+		//Inserindo no Set (HashMap)
 		tempoInicial = System.currentTimeMillis();
 		for (int i = 0; i < numValores; i++) {
 			mapaInteiro.put(i, i);
 		}
 		tempoFinal = System.currentTimeMillis();
 		System.out.println("Tempo para inserir no Map: " 
-					+ (tempoFinal-tempoInicial));
+					+ (tempoFinal-tempoInicial)+"ms");
 		
 		//Fazendo a busca
 		//Buscando na List (ArrayList)
@@ -53,25 +53,25 @@ public class Main {
 		}
 		tempoFinal = System.currentTimeMillis();
 		System.out.println("Tempo para buscar na List: " 
-					+ (tempoFinal-tempoInicial));
+					+ (tempoFinal-tempoInicial)+"ms");
 		
-		//Buscando no Set
+		//Buscando no HashSet
 		tempoInicial = System.currentTimeMillis();
 		for (int i = 0; i < numValores; i++) {
 			conjuntoInteiro.contains(i);
 		}
 		tempoFinal = System.currentTimeMillis();
 		System.out.println("Tempo para buscar no Set: " 
-					+ (tempoFinal-tempoInicial));
+					+ (tempoFinal-tempoInicial)+"ms");
 		
-		//Buscando no Map
+		//Buscando no HashMap
 		tempoInicial = System.currentTimeMillis();
 		for (int i = 0; i < numValores; i++) {
 			mapaInteiro.containsKey(i);
 		}
 		tempoFinal = System.currentTimeMillis();
 		System.out.println("Tempo para buscar no Map: " 
-					+ (tempoFinal-tempoInicial));
+					+ (tempoFinal-tempoInicial)+"ms");
 		
 	}
 
