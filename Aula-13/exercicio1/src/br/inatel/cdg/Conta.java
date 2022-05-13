@@ -1,25 +1,21 @@
 package br.inatel.cdg;
 
+import java.util.*;
+
 public class Conta {
 	
 	private float saldo;
 	private float limite;
-	private Cliente[] clientes;
+	private Set<Cliente> clientes = new HashSet<>();
 	
 	
 	public Conta(float saldo, float limite) {
 		this.saldo = saldo;
 		this.limite = limite;
-		this.clientes = new Cliente[4];
 	}
 	
 	public void addCliente(Cliente cliente) {
-		for (int i = 0; i < clientes.length; i++) {
-			if(clientes[i] == null) {
-				clientes[i] = cliente;
-				break;
-			}
-		}
+		clientes.add(cliente);
 	}
 	
 	public void mostraInfo() {
@@ -34,8 +30,6 @@ public class Conta {
 			} catch (NullPointerException e) {
 				System.out.println("Nao existe cliente nessa posicao");
 			}
-			
-		
 		}
 	}
 	
