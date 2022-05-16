@@ -13,7 +13,6 @@ public class Main {
 		conta.addCliente(cliente1);
 		conta.addCliente(cliente2);
 		conta.addCliente(cliente3);
-//		conta.addCliente(null);
 		
 		conta.mostraInfo();
 		

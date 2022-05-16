@@ -2,12 +2,15 @@ package br.inatel.cdg;
 
 import br.inatel.cdg.exception.SaldoInsuficienteException;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 public class Main {
 
-	public static void main(String[] args) {
-		
-		Cliente cliente1 = new Cliente("Capiroto", 4321);
-		Cliente cliente2 = new Cliente("Capirotin", 1234);
+	public static void main(String[] args)  {
+
+		Cliente cliente1 = new Cliente("Tio", 4321);
+		Cliente cliente2 = new Cliente("Tia", 1234);
 		
 		Conta conta = new Conta(1500, 500);
 		
