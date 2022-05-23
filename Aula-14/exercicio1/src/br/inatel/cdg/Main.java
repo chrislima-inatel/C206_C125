@@ -11,20 +11,20 @@ import java.util.Map;
 public class Main {
 
 	public static void main(String[] args) {
-		Path arquivo = Paths.get("jogos.txt");
+		Path arquivo = Paths.get("professores_disciplina.txt");
 		
 		try {
 			List<String> conteudo = Files.readAllLines(arquivo);
-			Map<String,String> jogos = new HashMap<>();
+			Map<String,String> professores_disciplinas = new HashMap<>();
 			
 			conteudo.forEach((linha) -> {
-				String[] linhaQuebrada = linha.split(";");
-				jogos.put(linhaQuebrada[0],linhaQuebrada[1].strip());
+				String[] linhaQuebrada = linha.split("=");
+				professores_disciplinas.put(linhaQuebrada[0],linhaQuebrada[1].strip());
 			});
-			
-			jogos.forEach((jogo, empresa) -> {
-				System.out.println("Jogo: " + jogo);
-				System.out.println("Empresa: " + empresa);
+
+			professores_disciplinas.forEach((professor, disciplina) -> {
+				System.out.println("Professor: " + professor);
+				System.out.println("Disciplina: " + disciplina);
 				System.out.println("");
 			});
 			
