@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Main2 {
 
 	public static void main(String[] args) {
-		String frase = "Bora montar um Quebra-Quebra!";
+		String frase = "Bora participar da SeComp";
 		int deslocamento = 5;
 		String nomeArquivo = "textoCriptografado.txt";
 		
