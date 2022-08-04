@@ -7,24 +7,24 @@ public class Exercicio2{
         //Criando um objeto do tipo Scanner, para ler do teclado
         Scanner entrada = new Scanner(System.in);
 
-        //Variaveis que irão salvar o numero de zumbis mortos nas três partidas
-        int partida1, partida2, partida3;
+        //Variaveis que irão salvar o numero de lanches consumidos
+        int lanche1, lanche2, lanche3;
 
-        System.out.print("Digite o número de zumbis mortos na primeira partida: ");
-        partida1 = entrada.nextInt();
-        System.out.print("Digite o número de zumbis mortos na segunda partida: ");
-        partida2 = entrada.nextInt();
-        System.out.print("Digite o número de zumbis mortos na terceira partida: ");
-        partida3 = entrada.nextInt();
+        System.out.print("Digite o número de lanches consumidos na primeira hora: ");
+        lanche1 = entrada.nextInt();
+        System.out.print("Digite o número de lanches consumidos na segunda hora: ");
+        lanche2 = entrada.nextInt();
+        System.out.print("Digite o número de lanches consumidos na terceira hora: ");
+        lanche3 = entrada.nextInt();
 
-        //total de zumbis mortos
-        int total = partida1 + partida2 + partida3;
+        //total de lanches
+        int total = lanche1 + lanche2 + lanche3;
 
-        //media de zumbis mortos
+        //media de lanches
         int media = total/3;
 
-        System.out.println("Total de zumbis mortos: " + total);
-        System.out.println("Media de zumbis mortos: " + media);
+        System.out.println("Total de lanches consumidos: " + total);
+        System.out.println("Media de lanches consumidos: " + media);
 
         //Para fechar o Scanner, após seu uso
         entrada.close();

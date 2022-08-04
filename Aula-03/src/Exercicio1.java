@@ -1,18 +1,18 @@
 public class Exercicio1{
 
     public static void main(String[] args) {
-        
-        //numero de zumbis mortos nas partidas
-        int partida1 = 130, partida2 = 240, partida3 = 320;
 
-        //total de zumbis mortos
-        int total = partida1 + partida2 + partida3;
+        //numero de lanches consumidos por hora
+        int lanche1 = 10, lanche2 = 4, lanche3 = 2;
 
-        //media de zumbis mortos
+        //total de lanches consumidos
+        int total = lanche1 + lanche2 + lanche3;
+
+        //media de lanches consumidos
         int media = total/3;
 
-        System.out.println("Total de zumbis mortos: " + total);
-        System.out.println("Media de zumbis mortos: " + media);
+        System.out.println("Total de lanches consumidos: " + total);
+        System.out.println("Media de lanches consumidos: " + media);
         
     }
 }
