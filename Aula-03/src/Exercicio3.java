@@ -13,7 +13,7 @@ public class Exercicio3{
         npa = entrada.nextInt();
        
         if(npa >= 60){
-            System.out.println("Parabéns! Você está aprovado");
+            System.out.println("Parabéns! Você está aprovado(a)");
         }else{
             System.out.println("Ainda há chance! Rumo a NP3");
 
@@ -21,7 +21,7 @@ public class Exercicio3{
             np3 = entrada.nextInt();
 
             if((np3 + npa)/2 >= 50){
-                System.out.println("Aeeeee. Aprovou!");
+                System.out.println("AEEEE Aprovado(a)!!!!!!");
             }else{
                 System.out.println("Não deu! Nos vemos no próximo semestre!");
             }

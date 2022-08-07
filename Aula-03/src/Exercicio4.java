@@ -15,10 +15,10 @@ public class Exercicio4{
         switch (numAlunosMatriculado) {
             case 10:
             case 20:
-                System.out.println("A aula será ministrada na sala I-15");
+                System.out.println("A aula será ministrada na sala I-16");
             break;
             case 30:
-                System.out.println("A aula será ministrada na sala I-25");
+                System.out.println("A aula será ministrada na sala I-22");
             break;
             default:
                 System.out.println("Número incorreto de alunos matriculados");
