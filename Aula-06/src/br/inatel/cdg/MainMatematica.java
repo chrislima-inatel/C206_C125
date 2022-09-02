@@ -7,6 +7,8 @@ public class MainMatematica {
 	public static void main(String[] args) {
 
 		Matematica matematica = new Matematica();
+
+		System.out.println(Math.random());
 		
 	}
 
