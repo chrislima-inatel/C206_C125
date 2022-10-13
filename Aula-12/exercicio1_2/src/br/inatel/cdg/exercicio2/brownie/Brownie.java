@@ -1,23 +1,17 @@
 package br.inatel.cdg.exercicio2.brownie;
 
-public class Brownie implements Comparable <Brownie> {
+public abstract class Brownie implements Comparable <Brownie> {
 
 	protected String nome;
-	protected double preco;
+	protected int preco;
 	protected String sabor;
 
 	@Override
 	public int compareTo(Brownie o) {
-		if(this.preco < o.getPreco()){
-			return -1;
-		}
-		if(this.preco > o.getPreco()){
-			return 1;
-		}
-		return 0;
+		return Integer.compare(o.getPreco(), this.preco);
 	}
 
-	public Brownie(String nome, double preco, String sabor) {
+	public Brownie(String nome, int preco, String sabor) {
 		this.nome = nome;
 		this.preco = preco;
 		this.sabor = sabor;
@@ -45,7 +39,7 @@ public class Brownie implements Comparable <Brownie> {
 		return nome;
 	}
 
-	public double getPreco() {
+	public int getPreco() {
 		return preco;
 	}
 

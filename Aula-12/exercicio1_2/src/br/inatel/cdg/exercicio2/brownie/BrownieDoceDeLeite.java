@@ -3,7 +3,7 @@ package br.inatel.cdg.exercicio2.brownie;
 
 public class BrownieDoceDeLeite extends Brownie {
 
-	public BrownieDoceDeLeite(String nome, double preco, String sabor) {
+	public BrownieDoceDeLeite(String nome, int preco, String sabor) {
 		super(nome, preco, sabor);
 	}
 	

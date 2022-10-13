@@ -2,7 +2,7 @@ package br.inatel.cdg.exercicio2.brownie;
 
 public class BrownieCafe extends Brownie {
 	
-	public BrownieCafe(String nome, double preco, String sabor) {
+	public BrownieCafe(String nome, int preco, String sabor) {
 		super(nome,preco,sabor);
 	}
 
